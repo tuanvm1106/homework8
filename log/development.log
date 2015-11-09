@@ -1,0 +1,362 @@
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-12 20:53:37 +0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (5.0ms)
+  Rendered layouts/_shim.html.erb (0.8ms)
+  Rendered layouts/_header.html.erb (10.7ms)
+  Rendered layouts/_footer.html.erb (1.7ms)
+Completed 200 OK in 4202ms (Views: 4191.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-12-12 20:53:41 +0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-12-12 20:53:41 +0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-12 20:53:41 +0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-12-12 20:53:41 +0700
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-12-12 20:53:41 +0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-12-12 20:53:41 +0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-12 20:53:41 +0700
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2014-12-12 20:53:41 +0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-12 20:53:41 +0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-12 20:53:41 +0700
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2014-12-12 20:53:41 +0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-12-12 20:53:41 +0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-12 20:53:41 +0700
+
+
+Started GET "/assets/icon.png" for 127.0.0.1 at 2014-12-12 20:53:42 +0700
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-12-12 20:53:44 +0700
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (58.8ms)
+  Rendered users/new.html.erb within layouts/application (91.9ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 195ms (Views: 187.6ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2014-12-12 20:53:59 +0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Z8nk5HUwb/7oYn8+JFAjUiHLxh9dYq5HaZkV0/8vEr8=", "user"=>{"name"=>"Nguyễn Tú Nam", "email"=>"hung", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create my account"}
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE LOWER("users"."email") = LOWER('hung') LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered shared/_error_messages.html.erb (2.5ms)
+  Rendered users/new.html.erb within layouts/application (7.1ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 260ms (Views: 160.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2014-12-12 20:53:59 +0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-12-12 20:53:59 +0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-12-12 20:53:59 +0700
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2014-12-12 20:53:59 +0700
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-12-12 20:53:59 +0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-12 20:53:59 +0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-12-12 20:53:59 +0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-12 20:53:59 +0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-12 20:53:59 +0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-12-12 20:53:59 +0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-12 20:53:59 +0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-12 20:53:59 +0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-12-12 20:53:59 +0700
+
+
+Started POST "/users" for 127.0.0.1 at 2014-12-12 20:54:19 +0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Z8nk5HUwb/7oYn8+JFAjUiHLxh9dYq5HaZkV0/8vEr8=", "user"=>{"name"=>"Nguyễn Tú Nam", "email"=>"hung@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create my account"}
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users"  WHERE LOWER("users"."email") = LOWER('hung@gmail.com') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", "2014-12-12 13:54:19.229082"], ["email", "hung@gmail.com"], ["name", "Nguyễn Tú Nam"], ["password_digest", "$2a$10$tyz40tp7O284wjFnUH/6J.VxHYtINuNE1MB4gN3mDWla5ZWxSJKNS"], ["updated_at", "2014-12-12 13:54:19.229082"]]
+  [1m[35m (142.9ms)[0m  commit transaction
+Redirected to http://localhost:3000/users/6
+Completed 302 Found in 236ms (ActiveRecord: 143.7ms)
+
+
+Started GET "/users/6" for 127.0.0.1 at 2014-12-12 20:54:19 +0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 6]]
+  Rendered users/show.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 6 LIMIT 1
+  Rendered layouts/_header.html.erb (72.0ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 179ms (Views: 175.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-12-12 20:54:19 +0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-12-12 20:54:19 +0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-12 20:54:19 +0700
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2014-12-12 20:54:19 +0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-12-12 20:54:19 +0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-12 20:54:19 +0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-12-12 20:54:19 +0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-12-12 20:54:19 +0700
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2014-12-12 20:54:19 +0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-12 20:54:19 +0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-12 20:54:19 +0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-12 20:54:19 +0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-12-12 20:54:19 +0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-12 20:54:31 +0700
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 6 LIMIT 1[0m
+  Rendered layouts/_header.html.erb (1.7ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 91ms (Views: 90.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-12-12 20:54:31 +0700
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2014-12-12 20:54:31 +0700
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-12-12 20:54:31 +0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-12-12 20:54:31 +0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-12 20:54:31 +0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-12 20:54:31 +0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-12 20:54:31 +0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-12-12 20:54:31 +0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-12 20:54:31 +0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-12-12 20:54:31 +0700
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2014-12-12 20:54:31 +0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-12-12 20:54:31 +0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-12 20:54:31 +0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-12 20:54:34 +0700
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 6 LIMIT 1
+  Rendered layouts/_header.html.erb (2.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 170ms (Views: 168.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-12 20:54:34 +0700
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 6 LIMIT 1[0m
+  Rendered layouts/_header.html.erb (1.5ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 97ms (Views: 95.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/help" for 127.0.0.1 at 2014-12-12 20:54:36 +0700
+Processing by StaticPagesController#help as HTML
+  Rendered static_pages/help.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 6 LIMIT 1
+  Rendered layouts/_header.html.erb (2.2ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 182ms (Views: 180.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/6" for 127.0.0.1 at 2014-12-12 20:54:45 +0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 6]]
+  Rendered users/show.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 6 LIMIT 1
+  Rendered layouts/_header.html.erb (2.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 100ms (Views: 97.3ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2014-12-12 20:54:54 +0700
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Z8nk5HUwb/7oYn8+JFAjUiHLxh9dYq5HaZkV0/8vEr8="}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 6 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 6ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-12 20:54:54 +0700
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 115ms (Views: 114.0ms | ActiveRecord: 0.0ms)
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2014-12-12 20:54:54 +0700
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Z8nk5HUwb/7oYn8+JFAjUiHLxh9dYq5HaZkV0/8vEr8="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-12 20:54:54 +0700
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 94ms (Views: 93.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-12-12 20:54:54 +0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-12-12 20:54:54 +0700
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-12-12 20:54:54 +0700
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2014-12-12 20:54:54 +0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-12-12 20:54:54 +0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-12 20:54:54 +0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-12 20:54:54 +0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-12 20:54:54 +0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-12 20:54:54 +0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-12-12 20:54:54 +0700
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2014-12-12 20:54:54 +0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-12-12 20:54:54 +0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-12 20:54:54 +0700
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-12-12 20:54:57 +0700
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/new.html.erb within layouts/application (7.7ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (62.3ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 168ms (Views: 166.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2014-12-12 20:54:58 +0700
+Processing by StaticPagesController#about as HTML
+  Rendered static_pages/about.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 94ms (Views: 92.4ms | ActiveRecord: 0.0ms)
